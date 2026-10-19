@@ -1,0 +1,35 @@
+# Arithmatic Functions in Numpy Array
+
+import numpy as np
+
+# Maximm Minimun
+var = np.array([1,2,5,7,8,4,9,3])
+
+print("Min:", np.min(var) , np.argmin(var))
+print("Max:", np.max(var) , np.argmax(var))
+print()
+
+var1 = np.array([[1,4,3], [5,6,7]])
+
+print(np.min(var1, axis=1))
+print(np.min(var1, axis=0))
+print()
+
+# square root
+var2 = np.array([1,2,5,7,8,4,9,3])
+print("Squre Root:", np.sqrt(var2))
+print()
+
+# sin or cos
+var3 = np.array([1,2,3])
+
+print(np.sin(var3))
+print(np.cos(var3))
+print()
+
+# cumulity Sum
+var4 = np.array([1,2,3,5,8])
+
+print(np.cumsum(var4))
+
+
